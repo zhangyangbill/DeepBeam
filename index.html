@@ -27,21 +27,21 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Glottal Model Based Speech Beamforming for Ad Hoc Microphone Array: <font color = #58c3c2>Source Code & Audio Demos</font></h1>
-							<font size = 5><p><i> Yang Zhang   &nbsp Dinei Flor&ecircncio &nbsp   Mark Hasegawa-Johnson</i></p></font>
+							<h1>Deep Learning Based Speech Beamforming: <font color = #58c3c2>Audio Demo</font></h1>
+							<font size = 5><p><i> Kaizhi Qian, &nbsp Yang Zhang,   &nbsp Shiyu Chang, &nbsp Xuesong Yang, &nbsp Dinei Florencio, &nbsp   Mark Hasegawa-Johnson</i></p></font>
 							<p></p>
-							<a href="#source" class="button fit">Source Code</a>
+							<!--<a href="#source" class="button fit">Source Code</a>-->
 							<a href="#config" class="button fit">Configurations</a>
 							<a href="#results" class="button fit">Results</a>
 							<br></br><br></br>
 							<!-- Text -->
 								<section>
-								<a name="source"></a>
+								<!--<a name="source"></a>
 									<h2><font size = 5 color= #58c3c2>Source Code</font></h2>
 									<p><font size=5>
 										Source code can be found <a href=https://github.com/zhangyangbill/GRAB/tree/master/code_release><b>here</b></a>.
 									</font></p>
-									<br></br><br></br>
+									<br></br><br></br>-->
 								<a name="config"></a>
 									<h2><font size = 5 color= #58c3c2>Configurations</font></h2>
 									<p>
@@ -177,8 +177,9 @@
 									<font size = 5>
 									<p>Below are the audios processed by the four difference algorithms.
 									<ul class="12u 12u$(medium)">
-										<li><b>GRAB</b> - the proposed algorithm</li>
-										<li><b>Closest</b> - the closest mic strategy</li>
+										<li><b><font style="font-variant: small-caps">DeepBeam</font></b> - the proposed deep learning based speech beamforming</li>
+										<li><b>GRAB</b> - a beamforming tecnique guided by glottal residual fitting</li>
+										<li><b>CLOSEST</b> - the closest mic strategy</li>
 										<li><b>IVA</b> - independent vector analysis with Laplacian prior</li>
 										<li><b>MVDR</b> - time-domain MVDR </li>
 									</ul>
@@ -197,14 +198,19 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td rowspan="8">Cell Phone</td>
-													<td rowspan="4">1</td>
+													<td rowspan="10">Cell Phone</td>
+													<td rowspan="5">1</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n1_sp1_mt5.wav" /><embed height="50" src="audios/n1_sp1_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n1_sp1_mt1.wav" /><embed height="50" src="audios/n1_sp1_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n1_sp1_mt2.wav" /><embed height="50" src="audios/n1_sp1_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -220,13 +226,18 @@
 												</tr>
 												<tr>
 													
-													<td rowspan="4">2</td>
+													<td rowspan="5">2</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n1_sp2_mt5.wav" /><embed height="50" src="audios/n1_sp2_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n1_sp2_mt1.wav" /><embed height="50" src="audios/n1_sp2_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n1_sp2_mt2.wav" /><embed height="50" src="audios/n1_sp2_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -241,14 +252,19 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="8">Paper binding machine</td>
-													<td rowspan="4">1</td>
+													<td rowspan="10">Paper binding machine</td>
+													<td rowspan="5">1</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n2_sp1_mt5.wav" /><embed height="50" src="audios/n2_sp1_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n2_sp1_mt1.wav" /><embed height="50" src="audios/n2_sp1_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n2_sp1_mt2.wav" /><embed height="50" src="audios/n2_sp1_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -264,13 +280,18 @@
 												</tr>
 												<tr>
 													
-													<td rowspan="4">2</td>
-													<td>GRAB</td>
-													<td><audio controls=""><source src="audios/n2_sp2_mt4.wav" /><embed height="50" src="audios/n2_sp2_mt4.wav" width="100"></embed></audio>
+													<td rowspan="5">2</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n2_sp2_mt5.wav" /><embed height="50" src="audios/n2_sp2_mt5.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>GRAB</td>
+													<td><audio controls=""><source src="audios/n2_sp2_mt1.wav" /><embed height="50" src="audios/n2_sp2_mt1.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n2_sp2_mt2.wav" /><embed height="50" src="audios/n2_sp2_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -285,14 +306,19 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="8">Paper shuffle</td>
-													<td rowspan="4">1</td>
+													<td rowspan="10">Paper shuffle</td>
+													<td rowspan="5">1</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n3_sp1_mt5.wav" /><embed height="50" src="audios/n3_sp1_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n3_sp1_mt1.wav" /><embed height="50" src="audios/n3_sp1_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n3_sp1_mt2.wav" /><embed height="50" src="audios/n3_sp1_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -308,13 +334,17 @@
 												</tr>
 												<tr>
 													
-													<td rowspan="4">2</td>
+													<td rowspan="5">2</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n3_sp2_mt5.wav" /><embed height="50" src="audios/n3_sp2_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n3_sp2_mt1.wav" /><embed height="50" src="audios/n3_sp2_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n3_sp2_mt2.wav" /><embed height="50" src="audios/n3_sp2_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -329,14 +359,19 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="8">Door slide & bang</td>
-													<td rowspan="4">1</td>
+													<td rowspan="10">Door slide & bang</td>
+													<td rowspan="5">1</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n4_sp1_mt5.wav" /><embed height="50" src="audios/n4_sp1_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n4_sp1_mt1.wav" /><embed height="50" src="audios/n4_sp1_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n4_sp1_mt2.wav" /><embed height="50" src="audios/n4_sp1_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -352,13 +387,18 @@
 												</tr>
 												<tr>
 													
-													<td rowspan="4">2</td>
+													<td rowspan="5">2</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n4_sp2_mt5.wav" /><embed height="50" src="audios/n4_sp2_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n4_sp2_mt1.wav" /><embed height="50" src="audios/n4_sp2_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n4_sp2_mt2.wav" /><embed height="50" src="audios/n4_sp2_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -373,14 +413,19 @@
 													</td>
 												</tr>
 												<tr>
-													<td rowspan="8">Footstep</td>
-													<td rowspan="4">1</td>
+													<td rowspan="10">Footstep</td>
+													<td rowspan="5">1</td>
+													<td> <font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n5_sp1_mt5.wav" /><embed height="50" src="audios/n5_sp1_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n5_sp1_mt1.wav" /><embed height="50" src="audios/n5_sp1_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n5_sp1_mt2.wav" /><embed height="50" src="audios/n5_sp1_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
@@ -396,13 +441,18 @@
 												</tr>
 												<tr>
 													
-													<td rowspan="4">2</td>
+													<td rowspan="5">2</td>
+													<td><font style="font-variant: small-caps">DeepBeam</font></td>
+													<td><audio controls=""><source src="audios/n5_sp2_mt5.wav" /><embed height="50" src="audios/n5_sp2_mt5.wav" width="100"></embed></audio>
+													</td>
+												</tr>
+												<tr>
 													<td>GRAB</td>
 													<td><audio controls=""><source src="audios/n5_sp2_mt1.wav" /><embed height="50" src="audios/n5_sp2_mt1.wav" width="100"></embed></audio>
 													</td>
 												</tr>
 												<tr>
-													<td>Closest</td>
+													<td>CLOSEST</td>
 													<td><audio controls=""><source src="audios/n5_sp2_mt2.wav" /><embed height="50" src="audios/n5_sp2_mt2.wav" width="100"></embed></audio>
 													</td>
 												</tr>
